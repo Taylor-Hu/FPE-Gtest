@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="GB2312"?>
+<?xml-stylesheet type="text/xsl" href="testreport.xsl"?>
+<testsuites tests="178/665" failures="52" disabled="0" errors="0" time="17260.2" name="AllTests">
+<testhead name="mstar-7CX5" path="/home/zoushuqiang/mstar/MSD7CX5_Platform_Project" date="Mar 31 2017 / 11:26:59" tester="sdsd" />
+  <testsuite name="TestRtos" tests="0/82" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestComm" tests="0/21" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAout" tests="0/16" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestVout" tests="0/28" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestFp" tests="0/7" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestSc" tests="0/2" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestTuner" tests="0/21" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestSection" tests="0/48" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAV" tests="0/47" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestVwindow" tests="0/23" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestDscram" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestOsd" tests="178/178" failures="52" disabled="0" errors="0" time="17260">
+    <testcase name="TEST_OSD_INIT1" description="测试多次初始化时是否返回OK" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_INIT2" description="测试模块是否可被销毁" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_INIT3" description="测试CHDRV_OSD_GetVersion是否成功" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_DELAY" description="观看视频播放情况" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS1" description="CHDRV_OSD_AddToMemBitMap错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS2" description="CHDRV_OSD_AllocateMemory错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS3" description="CHDRV_OSD_BitBlit错误参数测试" status="run" time="0.003" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_BitBlit( ((void *)0x87650000), ((void *)0x87650000), __null)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:469<br />
+Value of: CHDRV_OSD_BitBlit( ((void *)0x87650000), ((void *)0x87650000), __null)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS4" description="CHDRV_OSD_BufBitBlit错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_BufBitBlit(((void *)0x87650000),(200), (200), ((void *)0x87650000),(200), (200),__null)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:488<br />
+Value of: CHDRV_OSD_BufBitBlit(((void *)0x87650000),(200), (200), ((void *)0x87650000),(200), (200),__null)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS5" description="CHDRV_OSD_CheckRegionNum错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS6" description="CHDRV_OSD_ClearArea错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS7" description="CHDRV_OSD_ClearFullRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_ClearFullRegion(((void *)0x87650129),0)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:524<br />
+Value of: CHDRV_OSD_ClearFullRegion(((void *)0x87650129),0)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS8" description="CHDRV_OSD_CopyRect错误参数测试" status="run" time="0.334" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_CopyRect(((void *)0x87650129),((void *)0x87650000),(200),(200),(200),(200),(200),(200))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:533<br />
+Value of: CHDRV_OSD_CopyRect(((void *)0x87650129),((void *)0x87650000),(200),(200),(200),(200),(200),(200))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_CopyRect(((void *)0x87650000),((void *)0x87650129),(200),(200),(200),(200),(200),(200))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:535<br />
+Value of: CHDRV_OSD_CopyRect(((void *)0x87650000),((void *)0x87650129),(200),(200),(200),(200),(200),(200))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS9" description="CHDRV_OSD_CreateGIFDecoder错误参数测试" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS10" description="CHDRV_OSD_CreateRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_CreateRegion(&amp;rstru_Params, &amp;rh_Region)&#x0A;  Actual: 6(0x6)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:600<br />
+Value of: CHDRV_OSD_CreateRegion(&rstru_Params, &rh_Region)<br />
+  Actual: 6(0x6)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS11" description="CHDRV_OSD_CreateScrollRegion错误参数测试" status="run" time="0.337" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650129),stru_Rect,&amp;rh_ScrollRegion)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:614<br />
+Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650129),stru_Rect,&rh_ScrollRegion)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&amp;rh_ScrollRegion)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:617<br />
+Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&rh_ScrollRegion)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&amp;rh_ScrollRegion)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:620<br />
+Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&rh_ScrollRegion)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&amp;rh_ScrollRegion)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:623<br />
+Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&rh_ScrollRegion)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&amp;rh_ScrollRegion)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:626<br />
+Value of: CHDRV_OSD_CreateScrollRegion(((void *)0x87650000),stru_Rect,&rh_ScrollRegion)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS12" description="CHDRV_OSD_DecodeImage错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS13" description="CHDRV_OSD_DeleteRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_DeleteRegion(((void *)0x87650129))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:654<br />
+Value of: CHDRV_OSD_DeleteRegion(((void *)0x87650129))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS14" description="CHDRV_OSD_DestroyGIFDecoder错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_DestroyGIFDecoder((17))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:660<br />
+Value of: CHDRV_OSD_DestroyGIFDecoder((17))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS15" description="CHDRV_OSD_DestroyScrollRegion错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS16" description="CHDRV_OSD_DisableBootLogo错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS17" description="CHDRV_OSD_DrawHLine错误参数测试" status="run" time="0.003" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_DrawHLine(((void *)0x87650000),(-1),(200),(200),(200),(200),CHDRV_OSD_COLOR_TYPE_MAX,0,CHDRV_OSD_ALU_MAX)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:685<br />
+Value of: CHDRV_OSD_DrawHLine(((void *)0x87650000),(-1),(200),(200),(200),(200),CHDRV_OSD_COLOR_TYPE_MAX,0,CHDRV_OSD_ALU_MAX)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_DrawHLine(((void *)0x87650000),(200),(-1),(200),(200),(200),CHDRV_OSD_COLOR_TYPE_MAX,0,CHDRV_OSD_ALU_MAX)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:687<br />
+Value of: CHDRV_OSD_DrawHLine(((void *)0x87650000),(200),(-1),(200),(200),(200),CHDRV_OSD_COLOR_TYPE_MAX,0,CHDRV_OSD_ALU_MAX)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS18" description="CHDRV_OSD_DrawLine错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_DrawLine(((void *)0x87650129),(200),(200),(200),(200),(200),0,CHDRV_OSD_ALU_MAX)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:702<br />
+Value of: CHDRV_OSD_DrawLine(((void *)0x87650129),(200),(200),(200),(200),(200),0,CHDRV_OSD_ALU_MAX)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS19" description="CHDRV_OSD_DrawRect错误参数测试" status="run" time="0.335" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_DrawRect(((void *)0x87650000),0,(200),&amp;stru_Rect,CHDRV_OSD_COLOR_TYPE_MAX,(1),0,0)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:716<br />
+Value of: CHDRV_OSD_DrawRect(((void *)0x87650000),0,(200),&stru_Rect,CHDRV_OSD_COLOR_TYPE_MAX,(1),0,0)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_DrawRect(((void *)0x87650000),(200),0,&amp;stru_Rect,CHDRV_OSD_COLOR_TYPE_MAX,(1),0,0)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:717<br />
+Value of: CHDRV_OSD_DrawRect(((void *)0x87650000),(200),0,&stru_Rect,CHDRV_OSD_COLOR_TYPE_MAX,(1),0,0)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS20" description="CHDRV_OSD_DrawVLine错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_DrawVLine(((void *)0x87650000),(200),(200),(200),(200),(-1),CHDRV_OSD_COLOR_TYPE_MAX,0,CHDRV_OSD_ALU_MAX)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:741<br />
+Value of: CHDRV_OSD_DrawVLine(((void *)0x87650000),(200),(200),(200),(200),(-1),CHDRV_OSD_COLOR_TYPE_MAX,0,CHDRV_OSD_ALU_MAX)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS21" description="CHDRV_OSD_FreeMemory错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS22" description="CHDRV_OSD_GetAreaData错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetAreaData(((void *)0x87650129),(200),(200),(200),(200),&amp;ruc_Data)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:760<br />
+Value of: CHDRV_OSD_GetAreaData(((void *)0x87650129),(200),(200),(200),(200),&ruc_Data)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS23" description="CHDRV_OSD_GetBitMapByMem错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS24" description="CHDRV_OSD_GetDisplayRegionAttrib错误参数测试" status="run" time="0.334" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetDisplayRegionAttrib(((void *)0x87650129),&amp;rstru_RegionAttrib,0)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:788<br />
+Value of: CHDRV_OSD_GetDisplayRegionAttrib(((void *)0x87650129),&rstru_RegionAttrib,0)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS25" description="CHDRV_OSD_GetEncodeFormat错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetEncodeFormat(((void *)0x87650129),&amp;renm_EncFmt)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:799<br />
+Value of: CHDRV_OSD_GetEncodeFormat(((void *)0x87650129),&renm_EncFmt)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetEncodeFormat(((void *)0x87650000),__null)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:800<br />
+Value of: CHDRV_OSD_GetEncodeFormat(((void *)0x87650000),__null)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS26" description="CHDRV_OSD_GetGIFFrameInfo错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetGIFFrameInfo((17),0,&amp;rstru_FrameInfo)&#x0A;  Actual: 6(0x6)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:808<br />
+Value of: CHDRV_OSD_GetGIFFrameInfo((17),0,&rstru_FrameInfo)<br />
+  Actual: 6(0x6)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS27" description="CHDRV_OSD_GetImageInfo错误参数测试" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS28" description="CHDRV_OSD_GetOsdInfo错误参数测试" status="run" time="0.338" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650129),r_TAddressSet,r_BAddressSet,&amp;ri_PosX,&amp;ri_PosY,&amp;ri_Width,&amp;ri_Height,&amp;rb_Interlace,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:847<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650129),r_TAddressSet,r_BAddressSet,&ri_PosX,&ri_PosY,&ri_Width,&ri_Height,&rb_Interlace,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),__null,r_BAddressSet,&amp;ri_PosX,&amp;ri_PosY,&amp;ri_Width,&amp;ri_Height,&amp;rb_Interlace,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:848<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),__null,r_BAddressSet,&ri_PosX,&ri_PosY,&ri_Width,&ri_Height,&rb_Interlace,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,__null,&amp;ri_PosX,&amp;ri_PosY,&amp;ri_Width,&amp;ri_Height,&amp;rb_Interlace,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:849<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,__null,&ri_PosX,&ri_PosY,&ri_Width,&ri_Height,&rb_Interlace,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,__null,&amp;ri_PosY,&amp;ri_Width,&amp;ri_Height,&amp;rb_Interlace,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:850<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,__null,&ri_PosY,&ri_Width,&ri_Height,&rb_Interlace,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&amp;ri_PosX,__null,&amp;ri_Width,&amp;ri_Height,&amp;rb_Interlace,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:851<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&ri_PosX,__null,&ri_Width,&ri_Height,&rb_Interlace,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&amp;ri_PosX,&amp;ri_PosY,__null,&amp;ri_Height,&amp;rb_Interlace,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:852<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&ri_PosX,&ri_PosY,__null,&ri_Height,&rb_Interlace,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&amp;ri_PosX,&amp;ri_PosY,&amp;ri_Width,__null,&amp;rb_Interlace,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:853<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&ri_PosX,&ri_PosY,&ri_Width,__null,&rb_Interlace,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&amp;ri_PosX,&amp;ri_PosY,&amp;ri_Width,&amp;ri_Height,__null,&amp;rpenm_ClutColorType,&amp;rpenm_ColorType)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:854<br />
+Value of: CHDRV_OSD_GetOsdInfo(((void *)0x87650000),r_TAddressSet,r_BAddressSet,&ri_PosX,&ri_PosY,&ri_Width,&ri_Height,__null,&rpenm_ClutColorType,&rpenm_ColorType)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS29" description="CHDRV_OSD_GetPixel错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetPixel(((void *)0x87650129),(200),(200),&amp;ui_Color)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:863<br />
+Value of: CHDRV_OSD_GetPixel(((void *)0x87650129),(200),(200),&ui_Color)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS30" description="CHDRV_OSD_GetRegionAlpha错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetRegionAlpha(((void *)0x87650129),&amp;ri_AlphaValue)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:876<br />
+Value of: CHDRV_OSD_GetRegionAlpha(((void *)0x87650129),&ri_AlphaValue)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS31" description="CHDRV_OSD_GetRegionAttrib错误参数测试" status="run" time="0.335" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetRegionAttrib(((void *)0x87650129),&amp;rstru_RegionAttrib)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:885<br />
+Value of: CHDRV_OSD_GetRegionAttrib(((void *)0x87650129),&rstru_RegionAttrib)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS32" description="CHDRV_OSD_GetRegionPalette错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetRegionPalette(((void *)0x87650129),&amp;ui_ColorArray)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:896<br />
+Value of: CHDRV_OSD_GetRegionPalette(((void *)0x87650129),&ui_ColorArray)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetRegionPalette(((void *)0x87650000),__null)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:897<br />
+Value of: CHDRV_OSD_GetRegionPalette(((void *)0x87650000),__null)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS33" description="CHDRV_OSD_GetRegionPaletteEntry错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetRegionPaletteEntry(((void *)0x87650129),0,&amp;ui_Color)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:906<br />
+Value of: CHDRV_OSD_GetRegionPaletteEntry(((void *)0x87650129),0,&ui_Color)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS34" description="CHDRV_OSD_GetVersion错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS35" description="CHDRV_OSD_GetWindow错误参数测试" status="run" time="0.002" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetWindow(((void *)0x87650129),&amp;stru_Rect)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:921<br />
+Value of: CHDRV_OSD_GetWindow(((void *)0x87650129),&stru_Rect)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_GetWindow(((void *)0x87650000),__null)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:922<br />
+Value of: CHDRV_OSD_GetWindow(((void *)0x87650000),__null)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS36" description="CHDRV_OSD_HideRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_HideRegion(((void *)0x87650129))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:929<br />
+Value of: CHDRV_OSD_HideRegion(((void *)0x87650129))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS37" description="CHDRV_OSD_HideStillImage错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS38" description="CHDRV_OSD_IsDisableBootLogoInApp错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS39" description="CHDRV_OSD_IsStillImage错误参数测试" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS40" description="CHDRV_OSD_LinkRegion错误参数测试" status="run" time="0.333" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_LinkRegion(((void *)0x87650129),((void *)0x87650000))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:958<br />
+Value of: CHDRV_OSD_LinkRegion(((void *)0x87650129),((void *)0x87650000))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_LinkRegion(((void *)0x87650000),((void *)0x87650129))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:960<br />
+Value of: CHDRV_OSD_LinkRegion(((void *)0x87650000),((void *)0x87650129))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS41" description="CHDRV_OSD_PutAreaData错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_PutAreaData(((void *)0x87650129),(200),(200),(200),(200),&amp;ruc_Data)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:970<br />
+Value of: CHDRV_OSD_PutAreaData(((void *)0x87650129),(200),(200),(200),(200),&ruc_Data)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS42" description="CHDRV_OSD_ReCreateRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_ReCreateRegion(0)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:985<br />
+Value of: CHDRV_OSD_ReCreateRegion(0)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS43" description="CHDRV_OSD_SetAlphaReverse错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetAlphaReverse(((void *)0x87650129),(1))&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:992<br />
+Value of: CHDRV_OSD_SetAlphaReverse(((void *)0x87650129),(1))<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS44" description="CHDRV_OSD_SetEncodeFormat错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetEncodeFormat(((void *)0x87650129),CHDRV_OSD_ENC_FORMAT_MONO)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:999<br />
+Value of: CHDRV_OSD_SetEncodeFormat(((void *)0x87650129),CHDRV_OSD_ENC_FORMAT_MONO)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS45" description="CHDRV_OSD_SetFlushType错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetFlushType(0)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1005<br />
+Value of: CHDRV_OSD_SetFlushType(0)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS46" description="CHDRV_OSD_SetFullScreenSize错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS47" description="CHDRV_OSD_SetPixel错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetPixel(((void *)0x87650129),(200),(200),0,CHDRV_OSD_ALU_MAX)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1023<br />
+Value of: CHDRV_OSD_SetPixel(((void *)0x87650129),(200),(200),0,CHDRV_OSD_ALU_MAX)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS48" description="CHDRV_OSD_SetRegionAlpha错误参数测试" status="run" time="0.334" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetRegionAlpha(((void *)0x87650129),0)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1034<br />
+Value of: CHDRV_OSD_SetRegionAlpha(((void *)0x87650129),0)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS49" description="CHDRV_OSD_SetRegionPalette错误参数测试" status="run" time="0.002" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetRegionPalette(((void *)0x87650129),&amp;rp_ColorArray)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1042<br />
+Value of: CHDRV_OSD_SetRegionPalette(((void *)0x87650129),&rp_ColorArray)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_SetRegionPalette(((void *)0x87650000),__null)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1043<br />
+Value of: CHDRV_OSD_SetRegionPalette(((void *)0x87650000),__null)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS50" description="CHDRV_OSD_SetRegionPaletteEntry错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetRegionPaletteEntry(((void *)0x87650129),0,0)&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1050<br />
+Value of: CHDRV_OSD_SetRegionPaletteEntry(((void *)0x87650129),0,0)<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS51" description="CHDRV_OSD_SetWindow错误参数测试" status="run" time="0" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_SetWindow(((void *)0x87650129),stru_Rect)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1059<br />
+Value of: CHDRV_OSD_SetWindow(((void *)0x87650129),stru_Rect)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS52" description="CHDRV_OSD_ShowRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_ShowRegion(((void *)0x87650129))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1078<br />
+Value of: CHDRV_OSD_ShowRegion(((void *)0x87650129))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS53" description="CHDRV_OSD_ShowStillImage错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS54" description="CHDRV_OSD_Shutdown错误参数测试" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS55" description="CHDRV_OSD_StillImage错误参数测试" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_PARAMS56" description="CHDRV_OSD_UnlinkRegion错误参数测试" status="run" time="0.334" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_UnlinkRegion(((void *)0x87650129),((void *)0x87650000))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1107<br />
+Value of: CHDRV_OSD_UnlinkRegion(((void *)0x87650129),((void *)0x87650000))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_UnlinkRegion(((void *)0x87650000),((void *)0x87650129))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1109<br />
+Value of: CHDRV_OSD_UnlinkRegion(((void *)0x87650000),((void *)0x87650129))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS57" description="CHDRV_OSD_UpdateRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_UpdateRegion(((void *)0x87650129))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1115<br />
+Value of: CHDRV_OSD_UpdateRegion(((void *)0x87650129))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS58" description="CHDRV_OSD_UpdateRegionArea错误参数测试" status="run" time="0.003" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650129),(200),(200),(200),(200))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1121<br />
+Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650129),(200),(200),(200),(200))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(-1),(200),(200),(200))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1122<br />
+Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(-1),(200),(200),(200))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(200),(-1),(200),(200))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1124<br />
+Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(200),(-1),(200),(200))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(200),(200),0,(200))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1126<br />
+Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(200),(200),0,(200))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+      <failure message="Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(200),(200),(200),0)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1128<br />
+Value of: CHDRV_OSD_UpdateRegionArea(((void *)0x87650000),(200),(200),(200),0)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PARAMS59" description="CHDRV_OSD_UpdateScrollRegion错误参数测试" status="run" time="0.001" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_UpdateScrollRegion(((void *)0x87650129))&#x0A;  Actual: 0(0x0)&#x0A;Expected: CHDRV_OSD_INVALID_PARAM&#x0A;Which is: 4(0x4)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1136<br />
+Value of: CHDRV_OSD_UpdateScrollRegion(((void *)0x87650129))<br />
+  Actual: 0(0x0)<br />
+Expected: CHDRV_OSD_INVALID_PARAM<br />
+Which is: 4(0x4)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_CREATE_1" description="以合法参数创建一个osd1 draw region，其中宽高从env获取，颜色格式为4444，应返回成功" status="run" time="0.224" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATE_2" description="以合法参数创建一个osd1 display region，其中宽高从env获取，颜色格式为4444，应返回成功" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_GET_ATTRIB_1" description="针对刚刚创建的2个region，分别调用get attrib，应返回成功；属性值应正确" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_LINK_1" description="将两个region link在一起，应返回ok" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_SHOWREGION_1" description="调用show region，应返回ok" status="run" time="0.015" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEAREREGION_1" description="调用clear full draw region为白色，应返回ok" status="run" time="0.004" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEAREREGION_2" description="调用update region，句柄传disp region，应返回ok，询问测试员，画面应显示为白色" status="run" time="4.743" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEAREREGION_3" description="调用clear full draw region为红色，应返回ok" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_UPDATE_1" description="调用update region area左上角，句柄传disp region，应返回ok，询问测试员，画面应仅仅左上角显示为红色" status="run" time="0.76" classname="TestOsd" />
+    <testcase name="TEST_OSD_UPDATE_2" description="调用update region应返回ok，句柄传draw region，询问测试员，画面应显示为全部红色" status="run" time="1.034" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEAREREGION_4" description="调用clear area，将左上角四分之一的区域画为白色，应返回ok" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_UPDATE_3" description="调用update region应返回ok，询问测试员，画面应显示左上角白色，其他红色" status="run" time="0.833" classname="TestOsd" />
+    <testcase name="TEST_OSD_GETDATA_1" description="调用get area data左上角数据，应返回ok" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_PUTDATA_1" description="调用put area data，将数据put到屏幕的右上角，应返回ok" status="run" time="0.002" classname="TestOsd" />
+    <testcase name="TEST_OSD_UPDATE_4" description="调用update region应返回ok，询问测试员，" status="run" time="1.003" classname="TestOsd" />
+    <testcase name="TEST_OSD_COPYRECT" description="调用copy rect，将draw regioin的上半部分拷贝到下半部分，应返回ok" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_UPDATE_5" description="调用update region应返回ok，询问测试员，画面应全部显示为白色" status="run" time="1.047" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEARAREA_1" description="调用clear area，其中坐标分别在上下左右越界，可以返回不成功但不应死机，或屏幕乱" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_GETDATA_2" description="调用get area data，其中坐标分别在上下左右越界，可以返回不成功但不应死机，或屏幕乱" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_PUTDATA_2" description="调用put area data，其中坐标分别在上下左右越界，可以返回不成功但不应死机，或屏幕乱" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_UPDATA_AREA_1" description="调用update region area，其中坐标分别在上下左右越界，可以返回不成功但不应死机，或屏幕乱" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_SETPIXEL" description="调用set pixel函数绘制一个方块，然后调用get area data获取数据进行比较，应成功" status="run" time="0.137" classname="TestOsd" />
+    <testcase name="TEST_OSD_GETPIXEL" description="调用get pixel函数获取内容，应正确" status="run" time="0.002" classname="TestOsd">
+      <failure message="Value of: (0xF0F0)&#x0A;  Actual: 61680(0xf0f0)&#x0A;Expected: i_Color&#x0A;Which is: 4278190080(0xff000000)&#x0A;CHDRV_OSD_GetPixel未正确实现" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1394<br />
+Value of: (0xF0F0)<br />
+  Actual: 61680(0xf0f0)<br />
+Expected: i_Color<br />
+Which is: 4278190080(0xff000000)<br />
+CHDRV_OSD_GetPixel未正确实现]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_DRAWLINE" description="多次调用draw line函数以不同的宽度绘制成一个方块，然后调用get area data获取数据进行比较，应成功" status="run" time="0.014" classname="TestOsd">
+      <failure message="Value of: *(puc_Data+i_Loop )&#x0A;  Actual: 0(0x0)&#x0A;Expected: (0xF00F)&#x0A;Which is: 61455(0xf00f)&#x0A;CHDRV_OSD_DrawLine未正确实现" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1432<br />
+Value of: *(puc_Data+i_Loop )<br />
+  Actual: 0(0x0)<br />
+Expected: (0xF00F)<br />
+Which is: 61455(0xf00f)<br />
+CHDRV_OSD_DrawLine未正确实现]]></failure>
+      <failure message="Value of: *(puc_Data+i_Loop )&#x0A;  Actual: 0(0x0)&#x0A;Expected: (0xF00F)&#x0A;Which is: 61455(0xf00f)&#x0A;CHDRV_OSD_DrawLine未正确实现" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1452<br />
+Value of: *(puc_Data+i_Loop )<br />
+  Actual: 0(0x0)<br />
+Expected: (0xF00F)<br />
+Which is: 61455(0xf00f)<br />
+CHDRV_OSD_DrawLine未正确实现]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_DRAWHLINE" description="多次调用draw H line函数绘制成一个方块，然后调用get area data获取数据进行比较，应成功" status="run" time="0.008" classname="TestOsd">
+      <failure message="Value of: ret = CHDRV_OSD_DrawHLine(h_DrawRegion,0, 0, i_StartX,i_StartY, (200),CHDRV_OSD_COLOR_TYPE_ARGB4444,i_LineColor,enm_AluMode)&#x0A;  Actual: 4(0x4)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1481<br />
+Value of: ret = CHDRV_OSD_DrawHLine(h_DrawRegion,0, 0, i_StartX,i_StartY, (200),CHDRV_OSD_COLOR_TYPE_ARGB4444,i_LineColor,enm_AluMode)<br />
+  Actual: 4(0x4)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)]]></failure>
+      <failure message="Value of: Osd_Compare_SingleData(grh_DrawHandleOsd1,(200),(200), (200),(200),&amp;i_LineColor,CHDRV_OSD_COLOR_TYPE_ARGB4444)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;CHDRV_OSD_DrawHLine未正确实现" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1490<br />
+Value of: Osd_Compare_SingleData(grh_DrawHandleOsd1,(200),(200), (200),(200),&i_LineColor,CHDRV_OSD_COLOR_TYPE_ARGB4444)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+CHDRV_OSD_DrawHLine未正确实现]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_DRAWVLINE" description="多次调用draw V line函数绘制成一个方块，然后调用get area data获取数据进行比较，应成功" status="run" time="0.008" classname="TestOsd">
+      <failure message="Value of: ret = CHDRV_OSD_DrawVLine(h_DrawRegion,0, 0, i_StartX,i_StartY, (200),CHDRV_OSD_COLOR_TYPE_ARGB4444,i_LineColor,enm_AluMode)&#x0A;  Actual: 4(0x4)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1514<br />
+Value of: ret = CHDRV_OSD_DrawVLine(h_DrawRegion,0, 0, i_StartX,i_StartY, (200),CHDRV_OSD_COLOR_TYPE_ARGB4444,i_LineColor,enm_AluMode)<br />
+  Actual: 4(0x4)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)]]></failure>
+      <failure message="Value of: Osd_Compare_SingleData(grh_DrawHandleOsd1,(200),(200), (200),(200),&amp;i_LineColor,CHDRV_OSD_COLOR_TYPE_ARGB4444)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;CHDRV_OSD_DrawVLine未正确实现" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:1523<br />
+Value of: Osd_Compare_SingleData(grh_DrawHandleOsd1,(200),(200), (200),(200),&i_LineColor,CHDRV_OSD_COLOR_TYPE_ARGB4444)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+CHDRV_OSD_DrawVLine未正确实现]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_ALLOCMEM_1" description="调用osd memory创建一个480X320Xcolor bytes大小的内存" status="run" time="0.002" classname="TestOsd" />
+    <testcase name="TEST_OSD_DRAWRECT_1" description="调用draw rect函数以draw memory方式绘制方块，然后进行数据比较，应符合预期" status="run" time="0.036" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_1" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块COPY到draw region上，应成功" status="run" time="0.007" classname="TestOsd" />
+    <testcase name="TEST_OSD_GETDATA_3" description="调用get area data，数据应符合预期" status="run" time="0.006" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_2" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块放大到draw region上，应成功" status="run" time="0.012" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_3" description="调用get area data，放大后数据应符合预期" status="run" time="0.031" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_4" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块缩小到draw region上，应成功" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_5" description="调用get area data，缩小后数据应符合预期" status="run" time="0.006" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_6" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块用alpha blend到draw region上，应成功" status="run" time="0.012" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_7" description="调用get area data，alpha blend后数据应符合预期" status="run" time="0.028" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_8" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块用alpha blend到draw region上，应成功" status="run" time="0.013" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_9" description="调用get area data，alpha blend后数据应符合预期" status="run" time="0.03" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_10" description="再创建一个480X320、相同颜色模式的draw region2，应成功" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_11" description="调用draw rect函数以draw region handle方式绘制方块到region2上，然后调用get area data获取数据进行比较，应成功" status="run" time="0.006" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_12" description="先clear draw region，然后调用bitblit将刚刚绘制的方块从region2 COPY到draw region上，应成功" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_13" description="调用get area data，数据应符合预期" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_14" description="先clear draw region，然后调用bitblit将刚刚绘制的方块放大到draw region上，应成功" status="run" time="0.012" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_15" description="调用get area data，放大后数据应符合预期" status="run" time="0.029" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_16" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块缩小到draw region上，应成功" status="run" time="0.007" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_17" description="调用get area data，缩小后数据应符合预期" status="run" time="0.007" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_18" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块用alpha blend到draw region上，应成功" status="run" time="0.013" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_19" description="调用get area data，alpha blend后数据应符合预期" status="run" time="0.029" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_20" description="先clear draw region，然后调用buf bitblit将刚刚绘制的方块用alpha blend到draw region上，应成功" status="run" time="0.013" classname="TestOsd" />
+    <testcase name="TEST_OSD_BUFBITBLIT_21" description="调用get area data，alpha blend后数据应符合预期" status="run" time="0.029" classname="TestOsd" />
+    <testcase name="TEST_OSD_DELETEREGIOIN_1" description="删除创建的所有region，应成功" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATEREGION_1" description="以合法参数创建一个osd1 draw region，其中宽高为720X576，颜色格式为1555，应返回成功" status="run" time="0.003" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATEREGION_2" description="以合法参数创建一个osd1 display region，其中宽高为720X576，颜色格式为1555，应返回成功" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_GETATTRIB_1" description="针对刚刚创建的2个region，分别调用get attrib，应返回成功；属性值应正确" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_LINK_2" description="将两个region link在一起，应返回ok" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_SHOWREGION_2" description="调用show region，应返回ok" status="run" time="0.02" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEARREGION_1" description="调用clear full draw region为白色，应返回ok" status="run" time="0.008" classname="TestOsd" />
+    <testcase name="TEST_OSD_DRAWRECT_2" description="调用draw rect函数以draw region handle方式绘制方块，然后调用get area data获取数据进行比较，应成功" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_DRAWRECT_3" description="调用update region应返回ok，询问测试员，画面显示应符合预期" status="run" time="1.132" classname="TestOsd" />
+    <testcase name="TEST_OSD_DELETEREGIOIN_2" description="删除创建的所有region，应成功" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATEREGION_3" description="以合法参数创建一个osd1 draw region，其中宽高为720X576，颜色格式为8888，应返回成功" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATEREGION_4" description="以合法参数创建一个osd1 display region，其中宽高为720X576，颜色格式为8888，应返回成功" status="run" time="0.001" classname="TestOsd" />
+    <testcase name="TEST_OSD_GETATTRIB_2" description="针对刚刚创建的2个region，分别调用get attrib，应返回成功；属性值应正确" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_LINK_3" description="将两个region link在一起，应返回ok" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_SHOWREGION_3" description="调用show region，应返回ok" status="run" time="0.008" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEARREGION_2" description="调用clear full draw region为白色，应返回ok" status="run" time="0.004" classname="TestOsd" />
+    <testcase name="TEST_OSD_DRAWRECT_4" description="调用draw rect函数以draw region handle方式绘制方块，然后调用get area data获取数据进行比较，应成功" status="run" time="0.008" classname="TestOsd" />
+    <testcase name="TEST_OSD_DRAWRECT_5" description="调用update region应返回ok，询问测试员，画面显示应符合预期" status="run" time="1.202" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATEREGION_5" description="以合法参数创建一个osd2 draw region，其中宽高为720X576，颜色格式为8888，应返回成功" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATEREGION_6" description="以合法参数创建一个osd2 display region，其中宽高为720X576，颜色格式为8888，应返回成功" status="run" time="0.061" classname="TestOsd" />
+    <testcase name="TEST_OSD_GETATTRIB_3" description="针对刚刚创建的2个region，分别调用get attrib，应返回成功；属性值应正确" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_LINK_4" description="将两个region link在一起，应返回ok" status="run" time="0" classname="TestOsd" />
+    <testcase name="TEST_OSD_SHOWREGION_4" description="调用show region，应返回ok" status="run" time="0.019" classname="TestOsd" />
+    <testcase name="TEST_OSD_CLEARAREA_2" description="调用clear full draw region为白色，应返回ok" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_DRAWRECT_6" description="调用draw rect函数以draw region handle方式绘制方块，然后调用get area data获取数据进行比较，应成功" status="run" time="0.002" classname="TestOsd">
+      <failure message="Value of: Osd_Compare_SingleData(grh_DrawHandleOsd2,(200),(200),(200),(200),&amp;ui_Color,CHDRV_OSD_COLOR_TYPE_ARGB8888)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2220<br />
+Value of: Osd_Compare_SingleData(grh_DrawHandleOsd2,(200),(200),(200),(200),&ui_Color,CHDRV_OSD_COLOR_TYPE_ARGB8888)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_DRAWRECT_7" description="调用update region应返回ok，询问测试员，画面显示应符合预期，与osd1的叠加遮挡效果正常" status="run" time="1.025" classname="TestOsd" />
+    <testcase name="TEST_OSD_SETALPHA_1" description="调用set osd alpha设置osd1的透明度分别为100,80,40,0，osd2的透明度应不受影响，询问测试员效果是否OK" status="run" time="5.053" classname="TestOsd" />
+    <testcase name="TEST_OSD_SETALPHA_2" description="调用set osd alpha设置osd2的透明度分别为100,80,40,0，osd1的透明度应不受影响，询问测试员效果是否OK" status="run" time="4.246" classname="TestOsd" />
+    <testcase name="TEST_OSD_HIDE_1" description="调用hide region 2，应只可见osd1，询问测试员效果是否一致" status="run" time="1.201" classname="TestOsd" />
+    <testcase name="TEST_OSD_HIDE_2" description="调用hide region 1，region 1和2应均不可见，询问测试员效果是否一致" status="run" time="0.994" classname="TestOsd" />
+    <testcase name="TEST_OSD_SHOWREGION_5" description="调用show region 2，应只可见osd2，询问操作员效果是否一致" status="run" time="1.01" classname="TestOsd" />
+    <testcase name="TEST_OSD_SHOWREGION_6" description="调用show region 1，osd 1和2均可见，询问操作员效果是否一致" status="run" time="1.344" classname="TestOsd" />
+    <testcase name="TEST_OSD_POSITION_1" description="osd1和osd2上的方块位置、大小，与背景上的I帧标尺是否一致，询问操作员反馈结果" status="run" time="1.419" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATE_3" description="一次性在OSD1上创建2个OSD_REGION_WH大小，颜色格式为8888的draw region，应返回成功。然后释放" status="run" time="0.011" classname="TestOsd" />
+    <testcase name="TEST_OSD_CREATE_4" description="一次性在OSD2上创建2个OSD_REGION_WH大小，颜色格式为8888的draw region，应返回成功。然后释放" status="run" time="0.011" classname="TestOsd" />
+    <testcase name="TEST_OSD_ALLOCMEM_2" description="osd malloc 4 Mbytes内存，应返回成功" status="run" time="0.005" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE1" description="调用get image info，参数为路径方式，获取GIF图片的信息，应成功" status="run" time="0.09" classname="TestOsd">
+      <failure message="Value of: stru_ImgInfo.ui_Width&#x0A;  Actual: 328(0x148)&#x0A;Expected: fw_getenv_i(&quot;OSD_GIF_WIDTH&quot;)&#x0A;Which is: 324(0x144)&#x0A;获取图片信息宽度错误" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2379<br />
+Value of: stru_ImgInfo.ui_Width<br />
+  Actual: 328(0x148)<br />
+Expected: fw_getenv_i("OSD_GIF_WIDTH")<br />
+Which is: 324(0x144)<br />
+获取图片信息宽度错误]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PICTURE2" description="调用get image info，参数为路径方式，获取JPEG图片的信息，应成功" status="run" time="0.024" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE3" description="调用get image info，参数为路径方式，获取PNG图片的信息，应成功" status="run" time="0.038" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE4" description="调用get image info，参数为路径方式，获取BMP图片的信息，应成功" status="run" time="0.268" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE5" description="调用get image info，参数为内存指针方式，获取GIF图片的信息，应成功" status="run" time="0.068" classname="TestOsd">
+      <failure message="Value of: stru_ImgInfo.ui_Width&#x0A;  Actual: 328(0x148)&#x0A;Expected: fw_getenv_i(&quot;OSD_GIF_WIDTH&quot;)&#x0A;Which is: 324(0x144)&#x0A;获取图片信息宽度错误" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2442<br />
+Value of: stru_ImgInfo.ui_Width<br />
+  Actual: 328(0x148)<br />
+Expected: fw_getenv_i("OSD_GIF_WIDTH")<br />
+Which is: 324(0x144)<br />
+获取图片信息宽度错误]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PICTURE6" description="调用get image info，参数为内存指针方式，获取JPEG图片的信息，应成功" status="run" time="0.016" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE7" description="调用get image info，参数为内存指针方式，获取PNG图片的信息，应成功" status="run" time="0.032" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE8" description="调用get image info，参数为内存指针方式，获取BMP图片的信息，应成功" status="run" time="0.266" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE9" description="调用decoder image GIF，参数为路径方式，输出宽高与原图一致，应成功;比较内存数据与预期一致" status="run" time="2.109" classname="TestOsd">
+      <failure message="Value of: ret = test_input_yes()&#x0A;  Actual: 0(0x0)&#x0A;Expected: (1)&#x0A;Which is: 1(0x1)&#x0A;测试员认为显示不正确. pic name=/home/pic324X576.gif,size=746496" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:314<br />
+Value of: ret = test_input_yes()<br />
+  Actual: 0(0x0)<br />
+Expected: (1)<br />
+Which is: 1(0x1)<br />
+测试员认为显示不正确. pic name=/home/pic324X576.gif,size=746496]]></failure>
+      <failure message="Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;解码错误，filename=/home/pic324X576.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2683<br />
+Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+解码错误，filename=/home/pic324X576.gif]]></failure>
+      <failure message="Value of: osd_decode_pic((fw_getenv(&quot;OSD_GIF_FILEPATH&quot;)), data_path, ((S32)fw_getenv_i(&quot;OSD_GIF_WIDTH&quot;)), ((S32)fw_getenv_i(&quot;OSD_GIF_HEIGHT&quot;)))&#x0A;  Actual: 1(0x1)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;图片解析不正确, filename=/home/pic324X576.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2745<br />
+Value of: osd_decode_pic((fw_getenv("OSD_GIF_FILEPATH")), data_path, ((S32)fw_getenv_i("OSD_GIF_WIDTH")), ((S32)fw_getenv_i("OSD_GIF_HEIGHT")))<br />
+  Actual: 1(0x1)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+图片解析不正确, filename=/home/pic324X576.gif]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PICTURE10" description="调用decoder image JPEG，参数为路径方式，输出宽高与原图一致，应成功；比较内存数据与预期一致" status="run" time="1.863" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE11" description="调用decoder image PNG，参数为路径方式，输出宽高与原图一致，应成功；比较内存数据与预期一致" status="run" time="1.11" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE12" description="调用decoder image BMP，参数为路径方式，输出宽高与原图一致，应成功；比较内存数据与预期一致" status="run" time="0.313" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE13" description="调用decoder image GIF，参数为内存指针方式，输出宽高与原图一致，应成功；比较内存数据与预期一致" status="run" time="1.073" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE14" description="调用decoder image JPEG，参数为内存指针方式，输出宽高与原图一致，应成功；比较内存数据与预期一致" status="run" time="4.508" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE15" description="调用decoder image PNG，参数为内存指针方式，输出宽高与原图一致，应成功；比较内存数据与预期一致" status="run" time="1.524" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE16" description="调用decoder image BMP，参数为内存指针方式，输出宽高与原图一致，应成功；比较内存数据与预期一致" status="run" time="3.823" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE17" description="调用decoder image GIF，参数为路径方式，输出宽高是原图的三分之一，应成功；比较内存数据与预期一致" status="run" time="6.611" classname="TestOsd">
+      <failure message="Value of: ret = test_input_yes()&#x0A;  Actual: 0(0x0)&#x0A;Expected: (1)&#x0A;Which is: 1(0x1)&#x0A;测试员认为显示不正确,filename=/home/pic1080X1920.gif,size=0" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:286<br />
+Value of: ret = test_input_yes()<br />
+  Actual: 0(0x0)<br />
+Expected: (1)<br />
+Which is: 1(0x1)<br />
+测试员认为显示不正确,filename=/home/pic1080X1920.gif,size=0]]></failure>
+      <failure message="Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)&#x0A;  Actual: -2(0xfffffffe)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;解码错误，filename=/home/pic1080X1920.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2683<br />
+Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)<br />
+  Actual: -2(0xfffffffe)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+解码错误，filename=/home/pic1080X1920.gif]]></failure>
+      <failure message="Value of: osd_decode_pic(fw_getenv(&quot;OSD_GIF_COMMON_FILE&quot;), data_path, stru_ImgInfo.ui_Width / 3, stru_ImgInfo.ui_Height / 3)&#x0A;  Actual: -2(0xfffffffe)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;图片解析不正确, filename=/home/pic1080X1920.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2832<br />
+Value of: osd_decode_pic(fw_getenv("OSD_GIF_COMMON_FILE"), data_path, stru_ImgInfo.ui_Width / 3, stru_ImgInfo.ui_Height / 3)<br />
+  Actual: -2(0xfffffffe)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+图片解析不正确, filename=/home/pic1080X1920.gif]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PICTURE18" description="调用decoder image JPEG，参数为路径方式，输出宽高是原图的三分之一，应成功；比较内存数据与预期一致" status="run" time="0.138" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE19" description="调用decoder image PNG，参数为路径方式，输出宽高是原图的三分之一，应成功；比较内存数据与预期一致" status="run" time="5.312" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE20" description="调用decoder image BMP，参数为路径方式，输出宽高是原图的三分之一，应成功；比较内存数据与预期一致" status="run" time="0.017" classname="TestOsd">
+      <failure message="Value of: CHDRV_OSD_GetImageInfo(&amp;stru_ImgData, &amp;stru_ImgInfo)&#x0A;  Actual: 6(0x6)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2877<br />
+Value of: CHDRV_OSD_GetImageInfo(&stru_ImgData, &stru_ImgInfo)<br />
+  Actual: 6(0x6)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)]]></failure>
+      <failure message="Value of: ret = CHDRV_OSD_DecodeImage(grh_DrawHandleOsd1, stru_Rect, &amp;stru_ImgData)&#x0A;  Actual: 6(0x6)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2663<br />
+Value of: ret = CHDRV_OSD_DecodeImage(grh_DrawHandleOsd1, stru_Rect, &stru_ImgData)<br />
+  Actual: 6(0x6)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)]]></failure>
+      <failure message="Value of: osd_decode_pic(fw_getenv(&quot;OSD_BMP_COMMON_FILE&quot;), data_path, stru_ImgInfo.ui_Width / 3, stru_ImgInfo.ui_Height / 3)&#x0A;  Actual: 6(0x6)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;图片解析不正确, filename=/home/pic1080X1920.bmp" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2880<br />
+Value of: osd_decode_pic(fw_getenv("OSD_BMP_COMMON_FILE"), data_path, stru_ImgInfo.ui_Width / 3, stru_ImgInfo.ui_Height / 3)<br />
+  Actual: 6(0x6)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+图片解析不正确, filename=/home/pic1080X1920.bmp]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PICTURE21" description="调用decoder image GIF，参数为路径方式，输出宽高是原图的三倍，应成功；比较内存数据与预期一致" status="run" time="1.701" classname="TestOsd">
+      <failure message="Value of: ret = test_input_yes()&#x0A;  Actual: 0(0x0)&#x0A;Expected: (1)&#x0A;Which is: 1(0x1)&#x0A;测试员认为显示不正确,filename=/home/pic98X173.gif,size=0" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:286<br />
+Value of: ret = test_input_yes()<br />
+  Actual: 0(0x0)<br />
+Expected: (1)<br />
+Which is: 1(0x1)<br />
+测试员认为显示不正确,filename=/home/pic98X173.gif,size=0]]></failure>
+      <failure message="Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)&#x0A;  Actual: -2(0xfffffffe)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;解码错误，filename=/home/pic98X173.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2683<br />
+Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)<br />
+  Actual: -2(0xfffffffe)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+解码错误，filename=/home/pic98X173.gif]]></failure>
+      <failure message="Value of: osd_decode_pic(fw_getenv(&quot;OSD_GIF_LITTLE_FILE&quot;), data_path, stru_ImgInfo.ui_Width * 3, stru_ImgInfo.ui_Height * 3)&#x0A;  Actual: -2(0xfffffffe)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;图片解析不正确, filename=/home/pic98X173.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2896<br />
+Value of: osd_decode_pic(fw_getenv("OSD_GIF_LITTLE_FILE"), data_path, stru_ImgInfo.ui_Width * 3, stru_ImgInfo.ui_Height * 3)<br />
+  Actual: -2(0xfffffffe)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+图片解析不正确, filename=/home/pic98X173.gif]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PICTURE22" description="调用decoder image JPEG，参数为路径方式，输出宽高是原图的三倍，应成功；比较内存数据与预期一致" status="run" time="0.054" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE23" description="调用decoder image PNG，参数为路径方式，输出宽高是原图的三倍，应成功；比较内存数据与预期一致" status="run" time="0.057" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE24" description="调用decoder image BMP，参数为路径方式，输出宽高是原图的三倍，应成功；比较内存数据与预期一致" status="run" time="0.162" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE25" description="调用decoder image GIF，参数为路径方式，输出宽高为0，应输出原图大小，应成功；比较内存数据与预期一致" status="run" time="6.44" classname="TestOsd">
+      <failure message="Value of: ret = test_input_yes()&#x0A;  Actual: 0(0x0)&#x0A;Expected: (1)&#x0A;Which is: 1(0x1)&#x0A;测试员认为显示不正确,filename=/home/pic98X173.gif,size=0" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:286<br />
+Value of: ret = test_input_yes()<br />
+  Actual: 0(0x0)<br />
+Expected: (1)<br />
+Which is: 1(0x1)<br />
+测试员认为显示不正确,filename=/home/pic98X173.gif,size=0]]></failure>
+      <failure message="Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)&#x0A;  Actual: -2(0xfffffffe)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;解码错误，filename=/home/pic98X173.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2683<br />
+Value of: ret = Osd_Compare_Data(grh_DrawHandleOsd1,stru_Rect.s_X,stru_Rect.s_Y,w, h,data_name, CHDRV_OSD_COLOR_TYPE_ARGB8888, file_name)<br />
+  Actual: -2(0xfffffffe)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+解码错误，filename=/home/pic98X173.gif]]></failure>
+      <failure message="Value of: osd_decode_pic(fw_getenv(&quot;OSD_GIF_LITTLE_FILE&quot;), data_path, 0, 0)&#x0A;  Actual: -2(0xfffffffe)&#x0A;Expected: CHDRV_OSD_OK&#x0A;Which is: 0(0x0)&#x0A;图片解析不正确, filename=/home/pic98X173.gif" type=""><![CDATA[/home/zoushuqiang/mstar/MSD7CX5_Platform_Project/gtest/case/module/test_osd.cpp:2947<br />
+Value of: osd_decode_pic(fw_getenv("OSD_GIF_LITTLE_FILE"), data_path, 0, 0)<br />
+  Actual: -2(0xfffffffe)<br />
+Expected: CHDRV_OSD_OK<br />
+Which is: 0(0x0)<br />
+图片解析不正确, filename=/home/pic98X173.gif]]></failure>
+    </testcase>
+    <testcase name="TEST_OSD_PICTURE26" description="调用decoder image JPEG，参数为路径方式，输出宽高为0，应输出原图大小，应成功；比较内存数据与预期一致" status="run" time="0.027" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE27" description="调用decoder image PNG，参数为路径方式，输出宽高为0，应输出原图大小，应成功；比较内存数据与预期一致" status="run" time="0.031" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE28" description="调用decoder image BMP，参数为路径方式，输出宽高为0，应输出原图大小，应成功；比较内存数据与预期一致" status="run" time="0.139" classname="TestOsd" />
+    <testcase name="TEST_OSD_PICTURE29" description="循环调用decoder image jpeg，参数为路径方式，输出宽高为整屏，应成功；比较内存数据与预期一致" status="run" time="17190.1" classname="TestOsd" />
+  </testsuite>
+  <testsuite name="TestFlash" tests="0/28" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestPesfilter" tests="0/15" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAvFilter" tests="0/12" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestGpio" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestIIC" tests="0/8" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestTsmng" tests="0/6" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestRoute" tests="0/13" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestVideo" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAudio" tests="0/18" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestFsys" tests="0/57" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestMplay" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestPvr" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestHdmi" tests="0/20" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+</testsuites>

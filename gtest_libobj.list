@@ -1,0 +1,115 @@
+################################################################################
+#   文件名称: gtest_libobj.list
+#   内容描述: 中间层目标文件列表
+#   作    者: Leony
+#   日	  期: 2010-01-08
+#   COPYRIGHT (C) 2009 CHANGHONG
+################################################################################
+
+##############################目标文件列表########################################
+
+INCLIB += $(PRJROOT)/gtest/lib/gtest.lib
+
+WRAPFLAGS += --wrap=CHDRV_AUDIO_Open
+WRAPFLAGS += --wrap=CHDRV_AUDIO_Close
+WRAPFLAGS += --wrap=CHDRV_AUDIO_StartDecode
+WRAPFLAGS += --wrap=CHDRV_AUDIO_StopDecode
+WRAPFLAGS += --wrap=CHDRV_AUDIO_InstallCallback
+WRAPFLAGS += --wrap=CHDRV_AUDIO_UnInstallCallback
+           
+           
+WRAPFLAGS += --wrap=CHDRV_AVFILTER_AllocateFilter
+WRAPFLAGS += --wrap=CHDRV_AVFILTER_DeleteFilter
+WRAPFLAGS += --wrap=CHDRV_AVFILTER_SetPid
+WRAPFLAGS += --wrap=CHDRV_AVFILTER_EnableFilter
+WRAPFLAGS += --wrap=CHDRV_AVFILTER_DisableFilter
+           
+           
+WRAPFLAGS += --wrap=CHDRV_ROUTE_Create
+WRAPFLAGS += --wrap=CHDRV_ROUTE_Destroy
+           
+           
+WRAPFLAGS += --wrap=CHDRV_VIDEO_Open
+WRAPFLAGS += --wrap=CHDRV_VIDEO_Close
+WRAPFLAGS += --wrap=CHDRV_VIDEO_StartDecode
+WRAPFLAGS += --wrap=CHDRV_VIDEO_StopDecode
+WRAPFLAGS += --wrap=CHDRV_VIDEO_InstallCallback
+WRAPFLAGS += --wrap=CHDRV_VIDEO_UnInstallCallback
+           
+           
+WRAPFLAGS += --wrap=CHDRV_VWINDOW_Open
+WRAPFLAGS += --wrap=CHDRV_VWINDOW_Close
+WRAPFLAGS += --wrap=CHDRV_VWINDOW_Show
+WRAPFLAGS += --wrap=CHDRV_VWINDOW_Hide
+WRAPFLAGS += --wrap=CHDRV_VWINDOW_SetIOArea
+
+WRAPFLAGS += --wrap=CHDRV_OSD_CreateRegion
+WRAPFLAGS += --wrap=CHDRV_OSD_DeleteRegion
+WRAPFLAGS += --wrap=CHDRV_OSD_ShowRegion
+WRAPFLAGS += --wrap=CHDRV_OSD_HideRegion
+WRAPFLAGS += --wrap=CHDRV_OSD_UnlinkRegion
+WRAPFLAGS += --wrap=CHDRV_OSD_LinkRegion
+
+WRAPFLAGS += --wrap=CHDRV_VOUT_Open
+WRAPFLAGS += --wrap=CHDRV_VOUT_Close
+
+WRAPFLAGS += --wrap=CH_FSYS_OpenFile
+WRAPFLAGS += --wrap=CH_FSYS_CloseFile
+WRAPFLAGS += --wrap=CH_FSYS_OpenDir
+WRAPFLAGS += --wrap=CH_FSYS_CloseDir
+
+WRAPFLAGS += --wrap=CHDRV_TUNER_COFDM_SetIF
+WRAPFLAGS += --wrap=CHDRV_TUNER_QAM_SetIF
+WRAPFLAGS += --wrap=CHDRV_TUNER_DMBTH_SetIF
+WRAPFLAGS += --wrap=CHDRV_TUNER_QPSK_SetIF
+WRAPFLAGS += --wrap=CHDRV_TUNER_InstallCallBack
+WRAPFLAGS += --wrap=CHDRV_TUNER_UninstallCallBack
+
+WRAPFLAGS += --wrap=CHDRV_SECTION_AllocChannel
+WRAPFLAGS += --wrap=CHDRV_SECTION_FreeChannel
+WRAPFLAGS += --wrap=CHDRV_SECTION_StartChannel
+WRAPFLAGS += --wrap=CHDRV_SECTION_StopChannel
+WRAPFLAGS += --wrap=CHDRV_SECTION_SetChannelPid
+WRAPFLAGS += --wrap=CHDRV_SECTION_AllocFilter
+WRAPFLAGS += --wrap=CHDRV_SECTION_FreeFilter
+WRAPFLAGS += --wrap=CHDRV_SECTION_AssociateFilterToChannel 
+WRAPFLAGS += --wrap=CHDRV_SECTION_DisAssociateFilterToChannel 
+WRAPFLAGS += --wrap=CHDRV_SECTION_SetFilter
+WRAPFLAGS += --wrap=CHDRV_SECTION_StartFilter
+WRAPFLAGS += --wrap=CHDRV_SECTION_StopFilter
+WRAPFLAGS += --wrap=CHDRV_SECTION_ReadFilterData
+
+WRAPFLAGS += --wrap=CHDRV_AOUT_Open
+WRAPFLAGS += --wrap=CHDRV_AOUT_Close
+WRAPFLAGS += --wrap=CHDRV_AOUT_SetMute
+WRAPFLAGS += --wrap=CHDRV_AOUT_SetVolume
+WRAPFLAGS += --wrap=CHDRV_AOUT_SetSoundChannelMode
+WRAPFLAGS += --wrap=CHDRV_AOUT_SetSPDIFOutMode
+WRAPFLAGS += --wrap=CHDRV_AOUT_SetHDMIOutMode
+
+WRAPFLAGS += --wrap=CH_RTOS_CreateTask
+WRAPFLAGS += --wrap=CH_RTOS_DeleteTask
+WRAPFLAGS += --wrap=CH_RTOS_KillTask
+WRAPFLAGS += --wrap=CH_RTOS_CreateMessageQuene
+WRAPFLAGS += --wrap=CH_RTOS_DeleteMessageQuene
+WRAPFLAGS += --wrap=CH_RTOS_CreateSemaphore
+WRAPFLAGS += --wrap=CH_RTOS_DeleteSemaphore  
+WRAPFLAGS += --wrap=CH_RTOS_CreateEvent 
+WRAPFLAGS += --wrap=CH_RTOS_DeleteEvent 
+WRAPFLAGS += --wrap=CH_RTOS_CreateMutex 
+WRAPFLAGS += --wrap=CH_RTOS_DeleteMutex 
+WRAPFLAGS += --wrap=CH_RTOS_CreateTimer 
+WRAPFLAGS += --wrap=CH_RTOS_DeleteTimer 
+
+WRAPWORD = --wrap
+NEWWRAP = -Wl,--wrap
+
+ifeq "$(CFG_CHSSA_OS_TYPE)" "ECOS"
+LDFLAGS += $(WRAPFLAGS)
+else
+LDFLAGS += $(subst $(WRAPWORD),$(NEWWRAP),$(WRAPFLAGS))
+endif
+
+
+           
+#################################################################################

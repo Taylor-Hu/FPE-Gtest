@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="GB2312"?>
+<?xml-stylesheet type="text/xsl" href="testreport.xsl"?>
+<testsuites tests="57/664" failures="17" disabled="0" errors="0" time="111.323" name="AllTests">
+<testhead name="mstar-7CX5" path="/home/zoushuqiang/mstar/MSD7CX5_Platform_Project" date="Apr 24 2017 / 10:34:40" tester="dsdsd" />
+  <testsuite name="TestRtos" tests="0/82" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestComm" tests="0/17" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAout" tests="0/16" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestVout" tests="0/27" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestFp" tests="0/7" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestSc" tests="0/6" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestTuner" tests="0/21" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestSection" tests="0/48" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestRoute" tests="0/13" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestVideo" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAudio" tests="0/18" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestPesfilter" tests="0/15" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAvFilter" tests="0/12" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestGpio" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestIIC" tests="0/8" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestTsmng" tests="0/6" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestVwindow" tests="0/24" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestAV" tests="0/46" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestDscram" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestOsd" tests="0/178" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestFlash" tests="0/28" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestFsys" tests="57/57" failures="17" disabled="0" errors="0" time="111.319">
+    <testcase name="TEST_FSYS_INIT1" description="测试多次初始化时是否返回OK" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_INIT2" description="测试模块是否可被销毁" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_INIT3" description="测试CH_FSYS_GetVersion是否成功" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS1" description="CH_FSYS_OpenFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS2" description="CH_FSYS_CloseFile错误参数测试" status="run" time="0.005" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS3" description="CH_FSYS_DeleteFile错误参数测试" status="run" time="0.058" classname="TestFsys">
+      <failure message="Expected: (CH_FSYS_DeleteFile(reinterpret_cast&lt;const S8 *&gt;(fw_getenv(&quot;IFRAME_FILE&quot;)), __null, __null)) != (CH_FSYS_OK), actual: 0(0x0) vs 0(0x0)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:511<br />
+Expected: (CH_FSYS_DeleteFile(reinterpret_cast<const S8 *>(fw_getenv("IFRAME_FILE")), __null, __null)) != (CH_FSYS_OK), actual: 0(0x0) vs 0(0x0)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_PARAMS4" description="CH_FSYS_MoveFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS5" description="CH_FSYS_CopyFile错误参数测试" status="run" time="0.002" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS6" description="CH_FSYS_StopFileOperation错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS7" description="CH_FSYS_ReadFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS8" description="CH_FSYS_WriteFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS9" description="CH_FSYS_RenameFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS10" description="CH_FSYS_SeekFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS11" description="CH_FSYS_TellFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS12" description="CH_FSYS_FileIsEOF错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS13" description="CH_FSYS_ResizeFile错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS14" description="CH_FSYS_GetFileInfo错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS15" description="CH_FSYS_GetFileInfoEx错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS16" description="CH_FSYS_GetFileAndDirNumber错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS17" description="CH_FSYS_OpenDir错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS18" description="CH_FSYS_CloseDir错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS19" description="CH_FSYS_ReadDir错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS20" description="CH_FSYS_RewindDir错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS21" description="CH_FSYS_CreateDir错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS22" description="CH_FSYS_DeleteDir错误参数测试" status="run" time="0" classname="TestFsys">
+      <failure message="Failed&#x0A;应通过死亡测试" type=""><![CDATA[gtest/case/module/test_fsys.cpp:673<br />
+Failed<br />
+应通过死亡测试]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_PARAMS23" description="CH_FSYS_RenameDir错误参数测试" status="run" time="0" classname="TestFsys">
+      <failure message="Failed&#x0A;应通过死亡测试" type=""><![CDATA[gtest/case/module/test_fsys.cpp:686<br />
+Failed<br />
+应通过死亡测试]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_PARAMS24" description="CH_FSYS_GetDirInfo错误参数测试" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_PARAMS25" description="CH_FSYS_Format错误参数测试" status="run" time="0" classname="TestFsys">
+      <failure message="Failed&#x0A;应通过测试" type=""><![CDATA[gtest/case/module/test_fsys.cpp:710<br />
+Failed<br />
+应通过测试]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_PARAMS26" description="CH_FSYS_GetPartitionList错误参数测试" status="run" time="0" classname="TestFsys">
+      <failure message="Failed&#x0A;应通过死亡测试" type=""><![CDATA[gtest/case/module/test_fsys.cpp:727<br />
+Failed<br />
+应通过死亡测试]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_PARAMS27" description="CH_FSYS_InstallCallback错误参数测试" status="run" time="0.001" classname="TestFsys">
+      <failure message="Failed&#x0A;应通过死亡测试" type=""><![CDATA[gtest/case/module/test_fsys.cpp:741<br />
+Failed<br />
+应通过死亡测试]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_PARAMS28" description="CH_FSYS_UninstallCallback错误参数测试" status="run" time="0" classname="TestFsys">
+      <failure message="Failed&#x0A;应通过死亡测试" type=""><![CDATA[gtest/case/module/test_fsys.cpp:753<br />
+Failed<br />
+应通过死亡测试]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_CALL1" description="注册3个回调函数，均应返回成功" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_CALL2" description="提示用户插入/拔除U盘，3个回调函数均应收到正确的通知" status="run" time="19.774" classname="TestFsys" />
+    <testcase name="TEST_FSYS_DIR1" description="提示用户插入U盘，然后调用create dir在C:/根目录创建一个文件夹，应返回OK" status="run" time="7.095" classname="TestFsys">
+      <failure message="Value of: CH_FSYS_OK&#x0A;  Actual: 0(0x0)&#x0A;Expected: CH_FSYS_OpenDir(reinterpret_cast&lt;const S8 *&gt;(rest_name))&#x0A;Which is: 12859424(0xc43820)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:828<br />
+Value of: CH_FSYS_OK<br />
+  Actual: 0(0x0)<br />
+Expected: CH_FSYS_OpenDir(reinterpret_cast<const S8 *>(rest_name))<br />
+Which is: 12859424(0xc43820)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_DIR2" description="在刚创建的文件夹内递归创建文件夹,能否创建30个" status="run" time="0.001" classname="TestFsys">
+      <failure message="Expected: (i_levelNum) &gt; (29), actual: 1(0x1) vs 29(0x1d)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:858<br />
+Expected: (i_levelNum) > (29), actual: 1(0x1) vs 29(0x1d)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_DIR3" description="调用delete dir删除TEST_FSYS_DIR1中创建的文件夹" status="run" time="0.001" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE1" description="调用create dir创建一个文件夹，并在该文件夹中open file创建一个文件" status="run" time="0.001" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE2" description="rename file重命名该文件,get fileInfo能获取到重命名后的文件信息" status="run" time="0.001" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE3" description="在刚创建的文件夹内递归创建文件200个,能够成功" status="run" time="0.001" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE4" description="调用get DirInfo获取刚创建的所有文件信息" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE5" description="调用delete dir删除TEST_FSYS_FILE1中创建的文件夹" status="run" time="0.001" classname="TestFsys">
+      <failure message="Expected: (CH_FSYS_OpenDir(reinterpret_cast&lt;const S8 *&gt;(&quot;C:/zqm_dir&quot;))) != (CH_FSYS_OK), actual: 0(0x0) vs 0(0x0)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:945<br />
+Expected: (CH_FSYS_OpenDir(reinterpret_cast<const S8 *>("C:/zqm_dir"))) != (CH_FSYS_OK), actual: 0(0x0) vs 0(0x0)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE6" description="调用open file创建一个文件，通过write file往文件中写入100M数据" status="run" time="7.739" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE7" description="get fileInfo获取到到该文件的信息" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE8" description="seek file移动指针到文件末尾,tell file判断当前文件指针位置是否在末尾" status="run" time="0.002" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE9" description="seek file移动指针到文件开头,tell file判断当前文件指针位置是否在文件头" status="run" time="0.001" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE10" description="CH_FSYS_SeekFile移动指针到一指定位置，tell file判断当前文件指针是否在该位置" status="run" time="0.023" classname="TestFsys">
+      <failure message="Value of: 20&#x0A;  Actual: 20(0x14)&#x0A;Expected: CHS64_GetLowValue(l_offset)&#x0A;Which is: 1044(0x414)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1039<br />
+Value of: 20<br />
+  Actual: 20(0x14)<br />
+Expected: CHS64_GetLowValue(l_offset)<br />
+Which is: 1044(0x414)]]></failure>
+      <failure message="Value of: 1024+20&#x0A;  Actual: 1044(0x414)&#x0A;Expected: CHS64_GetLowValue(l_offset)&#x0A;Which is: 3092(0xc14)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1049<br />
+Value of: 1024+20<br />
+  Actual: 1044(0x414)<br />
+Expected: CHS64_GetLowValue(l_offset)<br />
+Which is: 3092(0xc14)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE11" description="delete file删除该文件" status="run" time="0" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE_RW1" description="调用open file创建一个文件，创建方式分别为w,wb,w+，通过write file往文件中写入100M数据" status="run" time="16.559" classname="TestFsys">
+      <failure message="Expected: (h_fileHandle2) != (__null), actual: 0(0x0) vs 0(0x0)&#x0A;wb方式打开文件失败" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1084<br />
+Expected: (h_fileHandle2) != (__null), actual: 0(0x0) vs 0(0x0)<br />
+wb方式打开文件失败]]></failure>
+      <failure message="Value of: CH_FSYS_OK&#x0A;  Actual: 0(0x0)&#x0A;Expected: CH_FSYS_CloseFile(h_fileHandle2)&#x0A;Which is: 5(0x5)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1101<br />
+Value of: CH_FSYS_OK<br />
+  Actual: 0(0x0)<br />
+Expected: CH_FSYS_CloseFile(h_fileHandle2)<br />
+Which is: 5(0x5)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE_RW2" description="调用open file创建另一个文件，创建方式分别为w,wb,w+，通过read file（打开方式分别为r,rb,r+）将上一个文件中的内容读出到该文件" status="run" time="0.01" classname="TestFsys">
+      <failure message="Expected: (h_fileHandle5) != (__null), actual: 0(0x0) vs 0(0x0)&#x0A;wb模式打开文件失败" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1120<br />
+Expected: (h_fileHandle5) != (__null), actual: 0(0x0) vs 0(0x0)<br />
+wb模式打开文件失败]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE_RW3" description="比较2个文件中的内容是否一致，判断读写是否成功" status="run" time="0.011" classname="TestFsys">
+      <failure message="Expected: (h_fileHandle2) != (__null), actual: 0(0x0) vs 0(0x0)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1187<br />
+Expected: (h_fileHandle2) != (__null), actual: 0(0x0) vs 0(0x0)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE_RW4" description="delete file删除文件" status="run" time="0.015" classname="TestFsys">
+      <failure message="Value of: CH_FSYS_OK&#x0A;  Actual: 0(0x0)&#x0A;Expected: CH_FSYS_DeleteFile(reinterpret_cast&lt;const S8 *&gt;(&quot;C:/example2.txt&quot;), __null, &amp;h_fileOpHdl)&#x0A;Which is: 1(0x1)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1234<br />
+Value of: CH_FSYS_OK<br />
+  Actual: 0(0x0)<br />
+Expected: CH_FSYS_DeleteFile(reinterpret_cast<const S8 *>("C:/example2.txt"), __null, &h_fileOpHdl)<br />
+Which is: 1(0x1)]]></failure>
+      <failure message="Value of: CH_FSYS_OK&#x0A;  Actual: 0(0x0)&#x0A;Expected: CH_FSYS_DeleteFile(reinterpret_cast&lt;const S8 *&gt;(&quot;C:/example5.txt&quot;), __null, &amp;h_fileOpHdl)&#x0A;Which is: 1(0x1)" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1237<br />
+Value of: CH_FSYS_OK<br />
+  Actual: 0(0x0)<br />
+Expected: CH_FSYS_DeleteFile(reinterpret_cast<const S8 *>("C:/example5.txt"), __null, &h_fileOpHdl)<br />
+Which is: 1(0x1)]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE_RW5" description="测试所有的读写方式是否符合预期" status="run" time="0.05" classname="TestFsys">
+      <failure message="Value of: 1&#x0A;  Actual: 1(0x1)&#x0A;Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)&#x0A;Which is: -1(0xffffffff)&#x0A;rb+模式下应可写" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1277<br />
+Value of: 1<br />
+  Actual: 1(0x1)<br />
+Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)<br />
+Which is: -1(0xffffffff)<br />
+rb+模式下应可写]]></failure>
+      <failure message="Value of: 1&#x0A;  Actual: 1(0x1)&#x0A;Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)&#x0A;Which is: -1(0xffffffff)&#x0A;wb模式下应可写" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1277<br />
+Value of: 1<br />
+  Actual: 1(0x1)<br />
+Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)<br />
+Which is: -1(0xffffffff)<br />
+wb模式下应可写]]></failure>
+      <failure message="Value of: 1&#x0A;  Actual: 1(0x1)&#x0A;Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)&#x0A;Which is: -1(0xffffffff)&#x0A;wb+模式下应可写" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1277<br />
+Value of: 1<br />
+  Actual: 1(0x1)<br />
+Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)<br />
+Which is: -1(0xffffffff)<br />
+wb+模式下应可写]]></failure>
+      <failure message="Value of: 1&#x0A;  Actual: 1(0x1)&#x0A;Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)&#x0A;Which is: -1(0xffffffff)&#x0A;wa模式下应可写" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1277<br />
+Value of: 1<br />
+  Actual: 1(0x1)<br />
+Expected: CH_FSYS_WriteFile(h_file, puc_buf, 1024, 1)<br />
+Which is: -1(0xffffffff)<br />
+wa模式下应可写]]></failure>
+      <failure message="Expected: (CHS64_GetLowValue(l_Offset)) &gt; (CHS64_GetLowValue(l_size)), actual: 0(0x0) vs 1024(0x400)&#x0A;wa模式打开，应以追加方式写文件" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1281<br />
+Expected: (CHS64_GetLowValue(l_Offset)) > (CHS64_GetLowValue(l_size)), actual: 0(0x0) vs 1024(0x400)<br />
+wa模式打开，应以追加方式写文件]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE_RW6" description="测试在写入文件的过程中拔掉U盘，不应死机" status="run" time="13.165" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE_RW7" description="测试在读取过程中拔掉U盘，不应死机" status="run" time="14.548" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE_FORMAT1" description="调用get partition取得已挂载设备上的分区表，与测试员确认是否正确" status="run" time="19.606" classname="TestFsys" />
+    <testcase name="TEST_FSYS_FILE_FORMAT2" description="调用format分别对每个分区进行格式化，分区中的数据应全部被格式化" status="run" time="4.698" classname="TestFsys">
+      <failure message="Value of: (1)&#x0A;  Actual: 1(0x1)&#x0A;Expected: test_input_yes()&#x0A;Which is: 0(0x0)&#x0A;测试员未同意对分区进行格式化" type=""><![CDATA[gtest/case/module/test_fsys.cpp:1487<br />
+Value of: (1)<br />
+  Actual: 1(0x1)<br />
+Expected: test_input_yes()<br />
+Which is: 0(0x0)<br />
+测试员未同意对分区进行格式化]]></failure>
+    </testcase>
+    <testcase name="TEST_FSYS_FILE_FORMAT3" description="卸载刚刚注册的回调函数，应成功。插入拔除U盘，不应再收到通知" status="run" time="7.334" classname="TestFsys" />
+  </testsuite>
+  <testsuite name="TestMplay" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestPvr" tests="0/3" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+  <testsuite name="TestHdmi" tests="0/20" failures="0" disabled="0" errors="0" time="0">
+  </testsuite>
+</testsuites>
